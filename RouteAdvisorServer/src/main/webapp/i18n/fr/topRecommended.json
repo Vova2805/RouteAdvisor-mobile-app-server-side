@@ -1,0 +1,24 @@
+{
+    "routeAdvisorApp": {
+        "topRecommended" : {
+            "home": {
+                "title": "TopRecommendeds",
+                "createLabel": "Créer un nouveau Top Recommended",
+                "createOrEditLabel": "Créer ou éditer un Top Recommended"
+            },
+            "created": "Un nouveau Top Recommended a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Top Recommended avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Top Recommended avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Top Recommended {{ id }} ?"
+            },
+            "detail": {
+                "title": "Top Recommended"
+            },
+            "rating": "Rating",
+            "category": "Category",
+            "placeId": "Place Id",
+            "templateId": "Template Id"
+        }
+    }
+}

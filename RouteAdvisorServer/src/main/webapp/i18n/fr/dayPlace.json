@@ -1,0 +1,23 @@
+{
+    "routeAdvisorApp": {
+        "dayPlace" : {
+            "home": {
+                "title": "DayPlaces",
+                "createLabel": "Créer un nouveau Day Place",
+                "createOrEditLabel": "Créer ou éditer un Day Place"
+            },
+            "created": "Un nouveau Day Place a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Day Place avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Day Place avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Day Place {{ id }} ?"
+            },
+            "detail": {
+                "title": "Day Place"
+            },
+            "placeId": "Place Id",
+            "tripDayId": "Trip Day Id",
+            "templateDayId": "Template Day Id"
+        }
+    }
+}

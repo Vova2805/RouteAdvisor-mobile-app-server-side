@@ -1,0 +1,16 @@
+version: '2'
+services:
+    routeadvisorserver-mongodb:
+        image: mongo:3.2.10
+        ports:
+            - "27017:27017"
+        command: mongos --configdb routeadvisorserver-mongodb-config
+    routeadvisorserver-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    routeadvisorserver-mongodb-config:
+        image: mongo:3.2.10
+        container_name: routeadvisorserver-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

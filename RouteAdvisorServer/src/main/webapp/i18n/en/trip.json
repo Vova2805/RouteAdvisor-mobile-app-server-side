@@ -1,0 +1,40 @@
+{
+    "routeAdvisorApp": {
+        "trip" : {
+            "home": {
+                "title": "Trips",
+                "createLabel": "Create a new Trip",
+                "createOrEditLabel": "Create or edit a Trip"
+            },
+            "created": "A new Trip is created with identifier {{ param }}",
+            "updated": "A Trip is updated with identifier {{ param }}",
+            "deleted": "A Trip is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Trip {{ id }}?"
+            },
+            "detail": {
+                "title": "Trip"
+            },
+            "userId": "User Id",
+            "cityId": "City Id",
+            "name": "Name",
+            "description": "Description",
+            "photoURL": "Photo URL",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "hours": "Hours",
+            "cost": "Cost",
+            "length": "Length",
+            "notesCount": "Notes Count",
+            "arrivalId": "Arrival Id",
+            "accommodationId": "Accommodation Id",
+            "audiosIds": "Audios Ids",
+            "videosIds": "Videos Ids",
+            "datesKnown": "Dates Known",
+            "accessible": "Accessible",
+            "offline": "Offline",
+            "trash": "Trash",
+            "token": "Token"
+        }
+    }
+}

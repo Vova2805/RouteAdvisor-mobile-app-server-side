@@ -1,0 +1,27 @@
+{
+    "routeAdvisorApp": {
+        "templateDay" : {
+            "home": {
+                "title": "Template Days",
+                "createLabel": "Create a new Template Day",
+                "createOrEditLabel": "Create or edit a Template Day"
+            },
+            "created": "A new Template Day is created with identifier {{ param }}",
+            "updated": "A Template Day is updated with identifier {{ param }}",
+            "deleted": "A Template Day is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Template Day {{ id }}?"
+            },
+            "detail": {
+                "title": "Template Day"
+            },
+            "templateId": "Template Id",
+            "date": "Date",
+            "hours": "Hours",
+            "length": "Length",
+            "placesCount": "Places Count",
+            "originId": "Origin Id",
+            "destinationId": "Destination Id"
+        }
+    }
+}

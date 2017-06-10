@@ -1,0 +1,35 @@
+{
+    "routeAdvisorApp": {
+        "template" : {
+            "home": {
+                "title": "Templates",
+                "createLabel": "Créer un nouveau Template",
+                "createOrEditLabel": "Créer ou éditer un Template"
+            },
+            "created": "Un nouveau Template a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Template avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Template avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Template {{ id }} ?"
+            },
+            "detail": {
+                "title": "Template"
+            },
+            "cityId": "City Id",
+            "name": "Name",
+            "description": "Description",
+            "time": "Time",
+            "days": "Days",
+            "rating": "Rating",
+            "photoURL": "Photo URL",
+            "length": "Length",
+            "placesCount": "Places Count",
+            "reviews": "Reviews",
+            "type": "Type",
+            "price": "Price",
+            "currency": "Currency",
+            "website": "Website",
+            "phoneNumber": "Phone Number"
+        }
+    }
+}

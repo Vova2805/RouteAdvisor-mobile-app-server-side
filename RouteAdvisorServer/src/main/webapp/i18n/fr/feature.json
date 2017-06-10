@@ -1,0 +1,45 @@
+{
+    "routeAdvisorApp": {
+        "feature" : {
+            "home": {
+                "title": "Features",
+                "createLabel": "Créer un nouveau Feature",
+                "createOrEditLabel": "Créer ou éditer un Feature"
+            },
+            "created": "Un nouveau Feature a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Feature avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Feature avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Feature {{ id }} ?"
+            },
+            "detail": {
+                "title": "Feature"
+            },
+            "level": "Level",
+            "type": "Type",
+            "rating": "Rating",
+            "guid": "Guid",
+            "name": "Name",
+            "nameSuffix": "Name Suffix",
+            "originalName": "Original Name",
+            "description": "Description",
+            "url": "Url",
+            "address": "Address",
+            "price": "Price",
+            "currency": "Currency",
+            "photoURL": "Photo URL",
+            "lat": "Lat",
+            "lng": "Lng",
+            "category": "Category",
+            "tags": "Tags",
+            "editedAt": "Edited At",
+            "tier": "Tier",
+            "proposedDuration": "Proposed Duration",
+            "favorites": "Favorites",
+            "officialWebsite": "Official Website",
+            "openingHours": "Opening Hours",
+            "email": "Email",
+            "phoneNumber": "Phone Number"
+        }
+    }
+}

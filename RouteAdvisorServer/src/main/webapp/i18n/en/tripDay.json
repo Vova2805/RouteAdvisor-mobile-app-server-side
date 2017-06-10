@@ -1,0 +1,31 @@
+{
+    "routeAdvisorApp": {
+        "tripDay" : {
+            "home": {
+                "title": "Trip Days",
+                "createLabel": "Create a new Trip Day",
+                "createOrEditLabel": "Create or edit a Trip Day"
+            },
+            "created": "A new Trip Day is created with identifier {{ param }}",
+            "updated": "A Trip Day is updated with identifier {{ param }}",
+            "deleted": "A Trip Day is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Trip Day {{ id }}?"
+            },
+            "detail": {
+                "title": "Trip Day"
+            },
+            "tripId": "Trip Id",
+            "date": "Date",
+            "hours": "Hours",
+            "length": "Length",
+            "originId": "Origin Id",
+            "destinationId": "Destination Id",
+            "placesCount": "Places Count",
+            "photoURL": "Photo URL",
+            "images": "Images",
+            "audios": "Audios",
+            "videos": "Videos"
+        }
+    }
+}

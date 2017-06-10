@@ -1,0 +1,9 @@
+{
+    "routeAdvisorApp": {
+        "TemplateType" : {
+            "null": "",
+            "FREE": "FREE",
+            "TOUR": "TOUR"
+        }
+    }
+}

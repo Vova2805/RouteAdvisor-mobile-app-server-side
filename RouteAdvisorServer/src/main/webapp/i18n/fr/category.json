@@ -1,0 +1,20 @@
+{
+    "routeAdvisorApp": {
+        "Category" : {
+            "null": "",
+            "NONE": "NONE",
+            "FAMILY": "FAMILY",
+            "MUSEUM": "MUSEUM",
+            "TRANSPORT": "TRANSPORT",
+            "SPORT": "SPORT",
+            "RESTAURANT": "RESTAURANT",
+            "CAFE": "CAFE",
+            "NIGHTLIFE": "NIGHTLIFE",
+            "SHOPPING": "SHOPPING",
+            "RELAX": "RELAX",
+            "OUTDOOR": "OUTDOOR",
+            "SIGHTSEEING": "SIGHTSEEING",
+            "HOTEL": "HOTEL"
+        }
+    }
+}

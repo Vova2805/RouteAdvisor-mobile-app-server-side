@@ -1,0 +1,11 @@
+{
+    "routeAdvisorApp": {
+        "FeatureLevel" : {
+            "null": "",
+            "CITY": "CITY",
+            "DESTINATION": "DESTINATION",
+            "PLACE": "PLACE",
+            "HOTEL": "HOTEL"
+        }
+    }
+}

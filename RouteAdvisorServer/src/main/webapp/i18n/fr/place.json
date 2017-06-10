@@ -1,0 +1,41 @@
+{
+    "routeAdvisorApp": {
+        "place" : {
+            "home": {
+                "title": "Places",
+                "createLabel": "Créer un nouveau Place",
+                "createOrEditLabel": "Créer ou éditer un Place"
+            },
+            "created": "Un nouveau Place a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Place avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Place avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Place {{ id }} ?"
+            },
+            "detail": {
+                "title": "Place"
+            },
+            "cityId": "City Id",
+            "level": "Level",
+            "type": "Type",
+            "rating": "Rating",
+            "name": "Name",
+            "description": "Description",
+            "address": "Address",
+            "price": "Price",
+            "currency": "Currency",
+            "photoURL": "Photo URL",
+            "lat": "Lat",
+            "lng": "Lng",
+            "category": "Category",
+            "tags": "Tags",
+            "editedAt": "Edited At",
+            "proposedDuration": "Proposed Duration",
+            "favorites": "Favorites",
+            "officialWebsite": "Official Website",
+            "openingHours": "Opening Hours",
+            "email": "Email",
+            "phoneNumber": "Phone Number"
+        }
+    }
+}

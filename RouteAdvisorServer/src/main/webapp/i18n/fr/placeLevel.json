@@ -1,0 +1,10 @@
+{
+    "routeAdvisorApp": {
+        "PlaceLevel" : {
+            "null": "",
+            "COUNTRY": "COUNTRY",
+            "CITY": "CITY",
+            "PLACE": "PLACE"
+        }
+    }
+}
