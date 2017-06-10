@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Filters</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid class="cards-grid">
+
+        <ion-row>
+            <ion-col col-4 (click)="filter('custom','top')">
+                <ion-card [ngClass]="{'selected': placesFilterModel.custom}">
+                    <ion-icon name="pin"></ion-icon>
+                    <p>
+                        Custom places
+                    </p>
+                </ion-card>
+            </ion-col>
+            <ion-col col-4 (click)="filter('favorited','top')">
+                <ion-card [ngClass]="{'selected': placesFilterModel.favorited}">
+                    <ion-icon name="heart"></ion-icon>
+                    <p>
+                        Favorited
+                    </p>
+                </ion-card>
+            </ion-col>
+            <ion-col col-4 (click)="filter('trip','top')">
+                <ion-card [ngClass]="{'selected': placesFilterModel.inTrip}">
+                    <ion-icon name="checkmark"></ion-icon>
+                    <p>
+                        In trip
+                    </p>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+    <ion-item-group *ngIf="placesFilterModel.categoriesTags.categories.length > 0" class="filter">
+        <ion-item-divider color="icon-color">Categories</ion-item-divider>
+
+        <ion-item *ngFor="let category of placesFilterModel.categoriesTags.categories; let i = index"
+                  [ngClass]="{'selected': category.selected}"
+                  (click)="category.selected=!category.selected;filter(category,'category')">
+            <ion-icon item-left name="{{getIcon(category.name)}}"></ion-icon>
+            {{getTitle(category.name)}}
+            <ion-note item-end>{{category.value}}</ion-note>
+            <ion-icon item-end name="close-circle" *ngIf="category.selected" class="filter-right"></ion-icon>
+        </ion-item>
+
+    </ion-item-group>
+
+    <ion-item-group *ngIf="placesFilterModel.categoriesTags.tags.length > 0" class="filter">
+        <ion-item-divider color="icon-color">Tags</ion-item-divider>
+
+        <ion-item *ngFor="let tag of placesFilterModel.categoriesTags.tags; let i = index"
+                  [ngClass]="{'selected': tag.selected}"
+                  (click)="tag.selected=!tag.selected;filter(tag,'tag')">
+            <ion-icon item-left name="bookmark"></ion-icon>
+            {{tag.name}}
+            <ion-note item-end>{{tag.value}}</ion-note>
+            <ion-icon item-end name="close-circle" *ngIf="tag.selected" class="filter-right"></ion-icon>
+        </ion-item>
+
+    </ion-item-group>
+
+</ion-content>

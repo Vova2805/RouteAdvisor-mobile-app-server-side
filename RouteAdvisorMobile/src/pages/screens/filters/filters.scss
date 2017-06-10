@@ -1,0 +1,49 @@
+page-filters {
+
+  ion-item, p {
+    color: color($colors, dark-lighter) !important;
+  }
+
+  ion-grid {
+
+    ion-grid ion-col {
+      padding: 0px !important;
+    }
+
+    ion-card {
+      color: color($colors, dark-lighter) !important;
+      text-align: center !important;
+      margin: auto !important;
+      height: 5em !important;
+      width: 90% !important;
+    }
+
+    ion-icon {
+      font-size: 30px !important;
+    }
+
+  }
+
+  ion-item {
+    display: inline;
+  }
+
+  .selected {
+    background-color: color($colors, secondary-light) !important;
+    color: color($colors, light) !important;
+  }
+
+  ion-item-group.filter {
+
+    ion-label {
+      position: relative;
+
+      ion-icon.filter-right {
+        position: absolute;
+        right: 2% !important;
+      }
+
+    }
+  }
+
+}

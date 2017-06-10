@@ -1,0 +1,93 @@
+page-weather {
+
+  ion-grid {
+
+    p {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    background-color: color($colors, primary) !important;
+    text-align: center !important;
+    color: color($colors, light) !important;
+
+    ion-col.temperature {
+      h1, p {
+        display: inline !important;
+        color: color($colors, light) !important;
+      }
+
+      p {
+        position: absolute;
+        top: -5px;
+        margin: 0px;
+        font-size: 0.4em;
+      }
+
+      h1 {
+        position: relative !important;
+        font-size: 6em;
+      }
+    }
+
+    ion-row.details {
+      ion-icon {
+        font-size: 6em;
+        margin-left: 1em;
+      }
+
+      ion-row {
+        text-align: left !important;
+      }
+
+      h1 {
+        margin-bottom: 0px !important;
+        margin-top: 0.5em !important;
+        font-size: 1.5em !important;
+      }
+      p {
+        margin: 0px !important;
+      }
+    }
+
+    ion-row.additional {
+      h1, p {
+        margin: 0px !important;
+        font-size: 1em !important;
+      }
+    }
+  }
+
+  h1 {
+    margin-top: 10px !important;
+  }
+
+  .inline {
+    display: inline !important;
+  }
+
+  .right {
+    float: right !important;
+  }
+
+  ion-list.forecast > p {
+    color: color($colors, dark-lighter) !important;
+  }
+
+  ion-list.forecast h4 p {
+    color: black !important;
+  }
+
+  ion-list.forecast {
+    h4 {
+      position: relative !important;
+
+      p {
+        position: absolute;
+      }
+    }
+
+    ion-icon {
+      margin-left: 1em !important;
+    }
+  }
+
+}

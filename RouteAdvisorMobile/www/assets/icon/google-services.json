@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "271703679522",
+    "project_id": "routeadvisor-1489849043642"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271703679522:android:86810776bc5288d9",
+        "android_client_info": {
+          "package_name": "com.routeadvisor.dudas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271703679522-aq36163jc52hs2g16i102brslbkdntih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.routeadvisor.dudas",
+            "certificate_hash": "e633eff6b8995c246a65213f9f665c4fe40eb2bf"
+          }
+        },
+        {
+          "client_id": "271703679522-68i7snfcvd2ifdq10tjfoupj40aeoop0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFH1rngBQdIwnkptvu_ivBla1F68bzQY8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

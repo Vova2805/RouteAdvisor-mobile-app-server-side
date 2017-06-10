@@ -1,0 +1,108 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle icon-only>
+            <ion-icon name='menu'></ion-icon>
+        </button>
+        <ion-title>Weather Forecast</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div *ngIf="retrieved">
+        <ion-grid>
+
+            <ion-row>
+                <ion-col col-12>
+                    <h3>{{weather.city}}</h3>
+                    <p>Today</p>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-12 class="temperature">
+                    <h1>{{weather.temp | number : '1.0-0'}}
+                        <p>o</p>
+                    </h1>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="details">
+                <ion-col col-6>
+                    <ion-icon name="{{weather.icon}}"></ion-icon>
+                </ion-col>
+
+                <ion-col col-6>
+                    <ion-grid>
+
+                        <ion-row>
+                            <ion-col col-12>
+                                <h1>{{weather.weather}}</h1>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col col-12>
+                                <p>{{weather.description}}</p>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="additional">
+
+                <ion-col col-6>
+                    <ion-grid>
+
+                        <ion-row>
+                            <ion-col col-12>
+                                <h1>Sunrise</h1>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col col-12>
+                                <p>{{weather.sunrise | date:'mediumTime'}}</p>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </ion-col>
+
+                <ion-col col-6>
+                    <ion-grid>
+
+                        <ion-row>
+                            <ion-col col-12>
+                                <h1>Sunset</h1>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col col-12>
+                                <p>{{weather.sunset | date:'mediumTime'}}</p>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </ion-col>
+
+            </ion-row>
+
+        </ion-grid>
+
+        <ion-list class="forecast">
+
+            <ion-item text-wrap *ngFor="let forecastItem of weather.forecast">
+                <p>{{ forecastItem.date | date:'fullDate'}} {{ forecastItem.date | date:'shortTime'}}</p>
+                <h4 class="inline"> {{forecastItem.min_temp | number : '1.0-0'}} <p class="inline">o</p></h4>
+                <h4 padding-left class="inline">/ {{forecastItem.max_temp | number : '1.0-0'}} <p class="inline">o</p>
+                </h4>
+                <ion-icon padding-left class="inline right" name="{{forecastItem.icon}}">
+                </ion-icon>
+                <p padding-left class="inline right">{{forecastItem.weather}}</p>
+            </ion-item>
+
+        </ion-list>
+    </div>
+
+</ion-content>

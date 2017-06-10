@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Map</ion-title>
+        <ion-buttons end>
+
+            <button ion-button icon-only (click)="locateMyPos()">
+                <ion-icon name="locate"></ion-icon>
+            </button>
+
+            <button ion-button icon-only (click)="showSearchPage()">
+                <ion-icon name="search"></ion-icon>
+            </button>
+
+            <button ion-button icon-only (click)="showFilters()">
+                <ion-icon name="options"></ion-icon>
+            </button>
+
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div #pleaseConnect id="please-connect">
+        <p>Please connect to the Internet...</p>
+    </div>
+
+    <div #map id="map"></div>
+
+    <ion-card class="point-info" *ngIf="infoOpen">
+
+        <div class="point-image" [ngStyle]="{'background-image': 'url(' + pointSelected.photoURL + ')'}"></div>
+
+        <ion-fab right top>
+            <button ion-fab color="secondary" (click)="goToPlaceDetails(pointSelected)">
+                <ion-icon name="add" *ngIf="!pointSelected.inTrip"></ion-icon>
+                <ion-icon name="checkmark" *ngIf="pointSelected.inTrip"></ion-icon>
+            </button>
+        </ion-fab>
+
+        <ion-item>
+            <h2>{{pointSelected.name}}</h2>
+            <p class="description">{{pointSelected.description}}</p>
+        </ion-item>
+
+        <ion-item>
+            <button ion-button icon-right clear item-left (click)="closeDetails()">
+                Close
+            </button>
+            <button ion-button icon-right clear item-right (click)="goToPlaceDetails(pointSelected)">
+                More details
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </ion-item>
+
+    </ion-card>
+
+</ion-content>

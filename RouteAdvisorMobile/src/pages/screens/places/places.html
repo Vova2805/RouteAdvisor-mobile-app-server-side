@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Places</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="showSearchPage()">
+                <ion-icon name="search"></ion-icon>
+            </button>
+            <button ion-button icon-only (click)="showFilters()">
+                <ion-icon name="options"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+    <div *ngIf="placesResponse.recommended.length > 0">
+
+        <ion-item-divider full color="divider">
+            {{ 'Recommended' | uppercase}}
+        </ion-item-divider>
+
+        <ion-list class="places">
+            <ion-item *ngFor="let item of placesResponse.recommended"
+                      (click)="ch" detail-push text-wrap (click)="goToDetails(item)">
+                <ion-avatar item-left>
+                    <ion-icon *ngIf="item.inTrip" name="done-all"></ion-icon>
+                    <img src="{{item.photoURL}}"/>
+                </ion-avatar>
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.type }}</p>
+            </ion-item>
+        </ion-list>
+    </div>
+
+    <ion-item-divider full color="divider">
+        {{ 'All' | uppercase}}
+    </ion-item-divider>
+
+    <ion-list class="places">
+        <ion-item *ngFor="let item of placesResponse.result" detail-push text-wrap
+                  (click)="goToDetails(item)">
+            <ion-avatar item-left>
+                <ion-icon *ngIf="item.inTrip" name="done-all"></ion-icon>
+                <img src="{{item.photoURL}}"/>
+            </ion-avatar>
+            <h4>{{ item.name }}</h4>
+            <p>{{ item.type }}</p>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

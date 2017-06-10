@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Search</ion-title>
+    </ion-navbar>
+    <ion-toolbar color="primary">
+        <ion-searchbar (ionInput)="onInput($event);"
+                       [(ngModel)]="searchTerm"
+                       [showCancelButton]="false"
+                       placeholder="Search">
+        </ion-searchbar>
+    </ion-toolbar>
+    <div class="no-padding-buttom" padding>
+        <ion-segment [(ngModel)]="segmentSelected">
+            <ion-segment-button value="places">
+                {{'Places'|uppercase}}
+            </ion-segment-button>
+
+            <ion-segment-button value="hotels">
+                {{'Hotels'|uppercase}}
+            </ion-segment-button>
+
+            <ion-segment-button value="addresses">
+                {{'Addresses'|uppercase}}
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+</ion-header>
+
+<ion-content>
+
+    <div [ngSwitch]="segmentSelected" class="detail-body">
+
+        <ion-list *ngSwitchCase="'places'">
+
+            <ion-item *ngFor="let item of searchResult.places" (click)="goToDetails(item)" detail-push text-wrap>
+                <ion-avatar item-left>
+                    <img src="{{item.photoURL}}"/>
+                </ion-avatar>
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.type }}</p>
+
+            </ion-item>
+
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'hotels'">
+
+            <ion-item *ngFor="let item of searchResult.hotels" (click)="goToDetails(item)" detail-push text-wrap>
+                <ion-avatar item-left>
+                    <img src="{{item.photoURL}}"/>
+                </ion-avatar>
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.type }}</p>
+
+            </ion-item>
+
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'addresses'">
+
+            <ion-item *ngFor="let item of searchResult.addresses" (click)="goToDetails(item)" detail-push text-wrap>
+                <ion-avatar item-left>
+                    <img src="{{item.photoURL}}"/>
+                </ion-avatar>
+                <h4>{{ item.address }}</h4>
+                <p>{{ item.type }}</p>
+
+            </ion-item>
+
+        </ion-list>
+
+    </div>
+
+</ion-content>

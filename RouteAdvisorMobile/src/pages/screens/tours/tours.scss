@@ -1,0 +1,22 @@
+page-tours {
+
+  ion-card {
+    position: relative !important;
+  }
+
+  ion-badge.stars {
+    position: absolute;
+    left: 32px !important;
+    top: 32px !important;
+  }
+
+  ion-badge.price {
+    position: absolute;
+    right: 32px !important;
+    top: 32px !important;
+  }
+
+  .time {
+    color: color($colors, dark-lighter) !important;
+  }
+}
